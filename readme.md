@@ -63,7 +63,6 @@ This structure helps maintain a clean separation of concerns, making the project
 
 
 ### CI CD - with AWS Code build and repository, Github
-Here's a customized section for your `README.md` based on the use of AWS CodeBuild, AWS CodePipeline, and GitHub integration:
 
 ---
 
@@ -116,7 +115,6 @@ This CI/CD setup ensures that your project is continuously built, tested, and de
 
 
 ### API Response
-Here's a section for the `README.md` explaining the custom response utilities added to the project:
 
 ---
 
