@@ -18,7 +18,7 @@
 
  I'll extract the contents of the uploaded `scripts.zip` file to see the project structure and provide a suitable explanation to add to the `README.md`. Let me start by extracting the files.
 
-The project structure includes several key directories and files. Here’s a suggested explanation for adding to the `README.md`:
+
 
 ---
 
