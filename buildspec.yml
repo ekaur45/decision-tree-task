@@ -1,0 +1,31 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 21
+    commands:
+      - node -v      
+      - npm install -g typescript
+      - npm install -g typescript-cp
+      - npm install
+  # pre_build:
+  #   commands:
+  #     - echo PORT=$PORT >> .env
+  build:
+    commands:
+      - echo Transpiling...
+      - tsc
+      - echo Copying...
+      - tscp
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - truncate -s 0 build/.env
+      - echo PORT=$PORT >> build/.env
+artifacts:
+  files:
+    - 'build/**/*'
+    - appspec.yml
+    - 'scripts/**/*'
+    - .env

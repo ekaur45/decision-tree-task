@@ -1,0 +1,55 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "My API",
+      "description": "Description",
+      "version": "1.0.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/api/",
+    "schemes": [
+      "http"
+    ],
+    "tags":[
+      {
+        "name":"Decision Tree",
+        "dscription":""
+      }      
+    ],
+    "paths": {
+        "/decision-tree/execute": {
+            "post": {
+              "tags":["Decision Tree"],
+              "description": "",
+              "parameters":[
+                {
+                    "name":"Decision Tree",
+                    "in":"body",
+                    "type":"object",
+                    "schema":{
+                        "$ref":"#/definitions/DecisionTreePayload"
+                    }
+                }
+              ],
+              "responses": {
+                "default": {
+                  "description": ""
+                }
+              }
+            }
+          }
+    },
+      "definitions":{
+        "DecisionTreePayload":{
+          "type":"object",
+          "properties":{
+            "decisionTree":{
+              "type":"string",
+              "example":"{\"type\": \"Condition\",\"expression\": \"new Date().getFullYear() === 2024\",\"trueAction\": {\"type\": \"SendSms\",\"phoneNumber\": \"+1234567890\"},\"falseAction\": {\"type\": \"SendEmail\",\"sender\": \"noreply@example.com\",\"receiver\": \"support@example.com\"}}"
+            }           
+          }
+        }
+        
+      }
+    
+  }
