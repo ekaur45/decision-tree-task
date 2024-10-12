@@ -11,10 +11,18 @@
     "test:watch": "jest --watch --coverage",
     "lint": "tslint -c tslint.json server/**/*.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "decision tree",
+    "backend",
+    "TypeScript",
+    "business logic",
+    "API",
+    "express",
+    "AWS"
+  ],
+  "author": "Waqas Ahmad",
   "license": "ISC",
-  "description": "",
+  "description": "A backend service for processing decision trees to enable customers to define and execute business logic tailored to their needs.",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
@@ -35,5 +43,16 @@
     "ts-jest": "^29.2.5",
     "ts-node-dev": "^2.0.0",
     "tslint": "^5.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekaur45/decision-tree-task.git"
+  },
+  "homepage": "https://github.com/ekaur45/decision-tree-task",
+  "bugs": {
+    "url": "https://github.com/ekaur45/decision-tree-task/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
