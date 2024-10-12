@@ -2,7 +2,7 @@
 
 ### Setup
 
- - Clone or download repo : ``
+ - Clone or download repo : `https://github.com/ekaur45/decision-tree-task.git`
  - Navigate to your project where `package.json` is located
  - Run `npm i` or `npm i --legacy-peer-deps`
  - copy `.env.example` to `.env` 
